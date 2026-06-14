@@ -60,7 +60,7 @@ def get_kr_prices():
         try:
             df = stock.get_market_ohlcv(day, day, code)
             close = int(df["종가"].iloc[-1]) if not df.empty else None
-            chg = float(df["등락률"].iloc[-1]) if not df.empty else None
+            chg = round(float(df["등락률"].iloc[-1]),2) if not df.empty else None
         except Exception as e:
             close, chg = None, None
             print(f"[KR] {name}({code}) 조회 실패: {e}")
