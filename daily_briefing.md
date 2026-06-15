@@ -1,11 +1,12 @@
-# 📰 데일리 브리핑 — 2026-06-15 (월) 07:15 KST
+# 📊 데일리 브리핑 — 2026-06-16 (월) 07:15 KST
 
-> **한 줄 시장요약:** AI 메모리·전력기기 수급 기대에 삼성전자(+7.86%)·한화오션(+7.85%)이 급등했고, 미국은 6/16~17 FOMC(동결 유력)와 미·이란 휴전 협상 진전을 주시하는 관망 장세.
+> **한 줄 시장요약:** 미·이란 종전 합의로 유가 급락·위험선호 회복하며 美 3대 지수 사상 최고권, 국내는 반도체 랠리로 코스피 8,500선·삼성전자 시총 2,000조 돌파.
 
 ---
 
 ## 💹 포트폴리오 시세
-*(기준일 2026-06-12 종가, 출처: GitHub 자동 갱신 데이터)*
+
+> 기준일: 한국/미국 20260612 (소스 갱신 2026-06-15 02:09 KST)
 
 | 종목 | 티커 | 종가 | 등락률(%) | 통화 |
 |---|---|---:|---:|---|
@@ -24,67 +25,67 @@
 
 ## 🎯 포트폴리오 뉴스
 
-1. **삼성전자**, 2026년 HBM 생산능력 50% 증설 추진 — 연말까지 월 25만 웨이퍼(현재 17만 대비 약 47%↑) 목표. ([TrendForce](https://www.trendforce.com/news/2025/12/30/news-samsung-reportedly-plans-50-hbm-capacity-surge-in-2026-spotlight-on-hbm4/))
-2. **삼성전자**, 커스텀 HBM4E 설계 2026년 5~6월 완료 예정 — 구글·메타·엔비디아向 커스텀팀에 엔지니어 250명 추가 투입. ([TrendForce](https://www.trendforce.com/news/2026/01/23/news-samsungs-custom-hbm4e-design-reportedly-aimed-for-mid-2026-parallels-sk-hynix-and-micron/))
-3. **SK하이닉스**, 2026년 HBM 생산능력 완판 전망 — HBM 연환산 매출 약 80억 달러 가이던스, HBM 시장 점유율 62%. ([Astute Group](https://www.astutegroup.com/news/general/sk-hynix-holds-62-of-hbm-micron-overtakes-samsung-2026-battle-pivots-to-hbm4/))
-4. **SK하이닉스–엔비디아**, 차세대 메모리 공동개발 다년 파트너십 — 엔비디아 툴로 반도체 시뮬레이션·자율 팹 디지털트윈 구축. ([Crescendo AI](https://www.crescendo.ai/news/latest-ai-news-and-updates))
-5. **HBM3E 가격**, 2026년 물량 대상 약 20% 인상 — 삼성·SK하이닉스 동반 인상으로 메모리 업황 호조. ([Seeking Alpha](https://seekingalpha.com/news/4535511-samsung-sk-hynix-increase-hbm3e-prices-by-20-percent-for-2026-orders-report))
-6. **효성중공업**, AI 데이터센터發 글로벌 전력기기 수요 폭증에 5월 연일 신고가 — 북미 공급부족·노후 전력망 교체가 장기 성장 동력. ([이코노미스트](https://economist.co.kr/article/view/ecn202605070005))
-7. **한화오션**, 고부가가치·친환경 선박 및 해상풍력 제품 시장 선점 주력 — 특수선·해양제품 수주 확대 기조. ([AlphaSquare](https://alphasquare.co.kr/home/stock-summary?code=042660))
-8. **NVDA**, 5월 분기 매출 816억 달러(블랙웰 주도) — 1,190억 달러 공급계약 확보, 800억 달러 자사주 매입 발표. ([Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/nvidia-vs-amd-better-ai-165302797.html))
-9. **AMD**, 2026년 주가 약 130% 급등(NVDA 12% 상회) — 메타 6GW 배치가 하이퍼스케일러 대표 레퍼런스, 5월 매출 102.5억 달러. ([Globe and Mail](https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/2415265/better-artificial-intelligence-ai-stock-buy-in-june-amd-vs-nvidia-the-winner-might-surprise-you/))
-10. **AI 반도체株**, 6/10 동반 약세 — NVDA·MU·AMD·INTC 하락, 엔비디아 한때 6% 급락하며 시총 5조 달러 하회. ([TipRanks](https://www.tipranks.com/news/why-ai-chip-stocks-nvda-mu-amd-intc-are-falling-today-june-10-2026))
+1. 삼성전자·SK하이닉스, 메모리 업황 호조로 최근 각 9%·16%대 상승하며 코스피 견인. [bizhankook](https://www.bizhankook.com/bk/article/32208)
+2. 증권가 목표가 상향 행렬 — NH투자증권 삼성전자 14.5만→15.5만원, 현대차증권 14.3만원, 노무라 16만원 제시. [bizhankook](https://www.bizhankook.com/bk/article/32208)
+3. HBM 수요 지속에 범용 D램 수익성이 HBM을 넘어설 전망 → 메모리 가격 결정력 강화. [hankyung](https://magazine.hankyung.com/business/article/202601016775b)
+4. SK하이닉스, HBM 프리미엄 수혜주로 AI 가속기 수요 확대 시 협상력 강화 평가. [hankyung](https://magazine.hankyung.com/business/article/202601016775b)
+5. 한화오션, 신안우이 해상풍력 EPC 도급계약 체결로 해상풍력 사업 본격 진입. [sankun](https://www.sankun.com/blog/detail/1345)
+6. 효성중공업, 3차 증설 본격화…2028년까지 초고압변압기 생산능력 50%+ 확대, 美 생산능력 1위·세계 빅4 목표. [alphasquare](https://alphasquare.co.kr/home/stock-summary?code=298040)
+7. 국내 전력기기 3사(효성·LS일렉트릭·HD현대일렉트릭), 2025년 사상 최대 실적·수주 — AI 데이터센터·탄소중립 수혜. [alphasquare](https://alphasquare.co.kr/home/stock-summary?code=298040)
+8. 엔비디아, 올가을 RTX Spark 슈퍼칩으로 PC 시장 진출(델·레노버 탑재) — 인텔 견제. [cnbc](https://www.cnbc.com/2026/06/02/nvidias-new-pc-chips-are-ceos-bid-to-own-every-part-of-ai-stack.html)
+9. 6월 초 필라델피아 반도체지수 하루 10% 급락 후 반등, 엔비디아 시총 3,000억달러 증발했다 회복. [intellectia](https://intellectia.ai/blog/ai-chip-stocks-volatility-june-2026)
+10. 6/15 AI칩株 반등 — AMD +4%, NVDA·INTC +2%; 오라클 데이터센터 700억달러 투자에 NVDA·AMD 수혜 기대. [tipranks](https://www.tipranks.com/news/why-ai-chip-stocks-nvda-amd-intc-and-avgo-are-rising-today-june-15-2026)
 
 ---
 
 ## 🇺🇸 미국 주요 뉴스
 
-1. **FOMC 6/16~17 개최**, 기준금리 3.50~3.75% 동결 확률 99.5% — 근원 CPI 약 4.2%로 물가 상방 압력 지속. ([Polymarket](https://polymarket.com/event/fed-decision-in-june-825))
-2. **연내 인상 가능성 부상** — CME 페드워치 기준 12월까지 0.25%p 인상 확률 70%, 완화 편향에서 공식 선회. ([Yahoo Finance](https://finance.yahoo.com/news/jpmorgan-sees-sp-500-reaching-7500-in-2026--or-surging-past-8000-if-the-fed-keeps-cutting-rates-142602366.html))
-3. **S&P500**, 7,600 돌파 후 4%+ 조정 — 3월 저점 대비 약 16% 높은 수준으로 모멘텀 유지. ([U.S. Bank](https://www.usbank.com/investing/financial-perspectives/market-news/is-a-market-correction-coming.html))
-4. **JP모건**, 2026년 S&P500 7,500 전망 — Fed 추가 인하 시 8,000 돌파 가능성 제시. ([Barchart](https://www.barchart.com/story/news/36328185/jpmorgan-forecasts-the-sp-500-index-will-hit-8-000-in-2026))
-5. **트럼프 경제 지지율 신저점** — 인플레이션·이란 대응에 대한 부정 평가 확산. ([YouGov](https://yougov.com/en-us/articles/54934-new-low-trump-approval-economy-expectations-drawn-out-iran-war-june-5-8-2026-economist-yougov-poll))
-6. **2026년 경기 엇갈린 출발** — 트럼프의 '호황' 약속과 달리 일자리 감소·휘발유 가격 상승·불확실성 부각. ([PBS](https://www.pbs.org/newshour/politics/trumps-roaring-economy-meets-a-rough-start-to-2026-with-job-losses-rising-gas-prices-and-uncertainty))
-7. **행정부, 2026 경제 붐 전망** — 러트닉 상무장관 "1분기 5%+ 성장" 주장, 금리 인하·세금 환급 기대. ([CBS News](https://www.cbsnews.com/news/trump-officials-predict-2026-economic-boom/))
-8. **유권자 3분의 2 "이란 협상 비효과적"** 평가 — 장기전 우려도 확산. ([YouGov](https://yougov.com/en-us/articles/54934-new-low-trump-approval-economy-expectations-drawn-out-iran-war-june-5-8-2026-economist-yougov-poll))
-9. **미·이란 휴전 협상 진전** — 6/13 파키스탄 총리 "양측 종전 합의 문안 합의" 발언. ([ABC News](https://abcnews.com/International/live-updates/iran-live-updates-israel-iran-trade-strikes-trump/?id=133674243))
-10. **호르무즈 해협 통항 차질** — 미국의 4월 봉쇄 유지로 아시아 일부 연료 부족·글로벌 경제 파급. ([Britannica](https://www.britannica.com/event/2026-Iran-war))
-11. **OpenAI, SEC에 S-1 초안 비공개 제출(6/8)** — 런레이트 약 250억 달러, "상장 시점 미정". ([Tech Insider](https://tech-insider.org/openai-ipo-850-billion-valuation-2026/))
-12. **빅테크 AI capex 정밀 점검** — 2026년 AI 인프라 투자 규모 약 6,900억 달러 추정. ([Futurum](https://futurumgroup.com/insights/ai-capex-2026-the-690b-infrastructure-sprint/))
-13. **MS, 일본에 4년 100억 달러 투자** — 소프트뱅크·사쿠라인터넷과 AI 데이터센터 확장(2026~2029). ([Crescendo AI](https://www.crescendo.ai/news/latest-ai-news-and-updates))
-14. **Stargate 프로젝트** — 4년간 10GW AI 데이터센터 구축에 5,000억 달러 헤드라인 투자. ([Crescendo AI](https://www.crescendo.ai/news/latest-ai-news-and-updates))
-15. **AI 버블 우려 재점화** — 오라클·브로드컴發 기술주 동반 약세 국면. ([Marketscreener](https://in.marketscreener.com/news/tech-slides-as-oracle-broadcom-revive-ai-bubble-concerns-tech-roundup-ce7d50d8dd8bff24))
-16. **엔비디아 시총 5조 달러 하회** — 6/10 매도세로 반도체 섹터 동반 조정. ([TipRanks](https://www.tipranks.com/news/why-ai-chip-stocks-nvda-mu-amd-intc-are-falling-today-june-10-2026))
-17. **휘발유 가격 상승** — 중동 리스크에 따른 유가 변동성 확대가 가계 부담 가중. ([PBS](https://www.pbs.org/newshour/politics/trumps-roaring-economy-meets-a-rough-start-to-2026-with-job-losses-rising-gas-prices-and-uncertainty))
-18. **연방 인력 개편·물가** — 식료품 등 생활물가 변화와 연방 인력 구조조정 추적 보도. ([CNN](https://www.cnn.com/politics/president-donald-trump-47))
-19. **AMD–메타 6GW 협력** — AMD 데이터센터 스토리 재편, 다만 엔비디아 네트워킹 매출이 AMD 전체 DC 사업 상회. ([Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/nvidia-vs-amd-better-ai-165302797.html))
-20. **밸류에이션 논쟁** — NVDA 85% 성장에도 24배, AMD 68배로 성장 대비 고평가 논란. ([Globe and Mail](https://www.theglobeandmail.com/investing/markets/stocks/NVDA/pressreleases/2415265/better-artificial-intelligence-ai-stock-buy-in-june-amd-vs-nvidia-the-winner-might-surprise-you/))
+1. 미·이란, 전쟁 종식 초기 합의 — 호르무즈 해협 재개방, MOU 스위스 서명 예정. [npr](https://www.npr.org/2026/06/15/nx-s1-5858590/us-iran-deal-updates)
+2. 합의에 적대행위 즉시 중단(레바논 포함)·이란산 원유 제재 유예·240억달러 동결자산 해제 포함. [aljazeera](https://www.aljazeera.com/economy/2026/6/15/stock-markets-soar-oil-falls-as-us-iran-confirm-deal-to-end-war)
+3. 유가 4.5%↓ $80, 브렌트 약 4%↓ $83로 3월 이후 최저. [cnn](https://www.cnn.com/2026/06/14/business/oil-prices-iran-peace-agreement)
+4. 호르무즈 약 4개월 폐쇄로 일 1,400만배럴 차질 → 정상 운항 기대. [aljazeera](https://www.aljazeera.com/economy/2026/6/15/stock-markets-soar-oil-falls-as-us-iran-confirm-deal-to-end-war)
+5. 증시 랠리 — S&P500 +1.9%, 다우 469p 사상 최고, 나스닥 +3.1%(3/31 이후 최고). [thestreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026)
+6. 트럼프, G7 정상회의 참석차 프랑스 에비앙 도착(6/15~17), 5번째 참석. [abcnews](https://abcnews.com/Politics/trump-heads-france-1st-g7-summit-us-iran/story?id=133798771)
+7. G7서 이란 합의·우크라이나 평화·AI·공급망·이민 논의; 마크롱 "세계 평화의 중요한 진전". [france24](https://www.france24.com/en/europe/20260615-trump-to)
+8. 트럼프, 개전 전 사전 협의 부재로 마크롱·스타머·메르츠·멜로니와 마찰. [cnn](https://www.cnn.com/2026/06/15/politics/g7-trump-france-gathering)
+9. 연준 기준금리 3.50~3.75% 동결 유지, 6/16~17 FOMC 동결 확률 약 99%. [federalreserve](https://www.federalreserve.gov/releases/h15/)
+10. 로이터 이코노미스트 다수 "이란전·에너지 충격발 인플레로 2026년 내내 금리 동결" 전망. [mitrade](https://www.mitrade.com/au/insights/others/cfd-trading/fed-interest-rate-decision-2026)
+11. 3월 SEP, 2026년 근원물가 전망 2.7%로 상향. [federalreserve](https://www.federalreserve.gov/monetarypolicy/fomcminutes20260429.htm)
+12. 파월 후임 워시 체제 거론 등 연준 리더십 변화에 시장 재가격. [mitrade](https://www.mitrade.com/au/insights/others/cfd-trading/fed-interest-rate-decision-2026)
+13. OpenAI, 사상 최대 1,220억달러 조달·기업가치 8,520억달러, 월매출 26억달러·주간 사용자 9억명. [crescendo](https://www.crescendo.ai/news/latest-ai-news-and-updates)
+14. OpenAI, 비공개 IPO 서류 제출 — 기업용(AI 코딩) 시장 성과 기반. [crescendo](https://www.crescendo.ai/news/latest-ai-news-and-updates)
+15. OpenAI, Codex 전 직무·도구 확장 발표(6/3) 및 생명과학 모델·바이오방어 이니셔티브 공개. [buildfastwithai](https://www.buildfastwithai.com/blogs/ai-news-today-june-7-2026)
+16. 애플 WWDC 팀 쿡 마지막 키노트 — Gemini 기반 + Siri 독립 앱 공개, 생성형 AI 신뢰 점검대. [cnbc](https://www.cnbc.com/2026/06/11/as-openai-leans-into-enterprise-apple-and-google-target-consumer-ai.html)
+17. 구글·애플, 소비자용 AI 신제품 대거 출시…OpenAI는 기업용에 집중. [cnbc](https://www.cnbc.com/2026/06/11/as-openai-leans-into-enterprise-apple-and-google-target-consumer-ai.html)
+18. 오라클, 4분기 매출 192억달러 사상 최대(+21%), 클라우드 99억달러(+47%). [tradingkey](https://www.tradingkey.com/analysis/stocks/us-stocks/261959450-oracle-record-q4-2026-earnings-report-cloud-data-center-stock-tradingkey)
+19. 오라클, AI 투자 위해 200억달러 추가 조달 발표에 주가 9%+ 하락(실적은 상회). [yahoo](https://finance.yahoo.com/news/p-500-gains-losses-today-214504245.html)
+20. 재무장관 "2026년 미국 경제 블록버스터" 전망, 다우 역사적 고점 돌파. [aol](https://www.aol.com/news/treasury-secretary-predicts-blockbuster-2026-200630126.html)
 
 ---
 
 ## 🇰🇷 한국 주요 뉴스
 
-1. **이재명 정부 집권 2년 차 진입** — 실용주의·국민통합 기조, 보수 인사 내각·청와대 발탁 지속. ([경향신문](https://www.khan.co.kr/))
-2. **5월 소비자물가 +3.1%(yoy)** — 전월(2.6%) 대비 0.5%p 상승, 물가 부담 재확대. ([한국은행](https://www.bok.or.kr/portal/main/main.do))
-3. **5월말 외환보유액 4,269.9억 달러** — 전월말 대비 8.8억 달러 감소. ([한국은행](https://www.bok.or.kr/portal/main/main.do))
-4. **G7 정상회의(프랑스 에비앙레뱅) 개막** — 미·이란 전쟁 이후 첫 회의, 서방 결속 시험대. ([경향신문](https://www.khan.co.kr/))
-5. **2026년 한국 경제 2.5% 성장 전망** — 반도체 수출 호조·내수 개선이 성장 견인. ([삼일PwC](https://www.pwc.com/kr/ko/insights/samil-insight/samilpwc_industry-outlook2026.pdf))
-6. **반도체, 올해 성장 주도 산업** — AI 메모리 슈퍼사이클이 수출 모멘텀의 핵심. ([삼일PwC](https://www.pwc.com/kr/ko/insights/samil-insight/samilpwc_industry-outlook2026.pdf))
-7. **중동 리스크에 물가·금리 부담 장기화 우려** — 원유 공급 차질 시 인플레 압력 재확대. ([뱅크몰](https://www.bank-mall.co.kr/plus/blog/12693))
-8. **2026년 건설투자 감소세 탈피 전망** — 자재비 안정·SOC 확대 기대, 미분양·입주물량 감소가 제약. ([KIET](https://kocham.org/wp-content/uploads/2025/12/KIET_%EA%B2%BD%EC%A0%9C%E3%86%8D%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D_2025-021_2026%EB%85%84_%EA%B2%BD%EC%A0%9C%C2%B7%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D.pdf))
-9. **소비자신뢰도 7개월 최고치** — 내수 회복 기대감 반영. ([Trading Economics](https://ko.tradingeconomics.com/south-korea/consumer-confidence/news/460074))
-10. **코스피 8,123.62 마감(6/12)** — 삼성전자 32.25만원 등 대형주 강세. ([나무위키](https://namu.wiki/w/%EC%BD%94%EC%8A%A4%ED%94%BC))
-11. **NAVER–엔비디아 소버린 AI 협력** — DSX 플랫폼 55MW로 시작, GW급 확장 및 HyperCLOVA X 차세대 모델 지원. ([Crescendo AI](https://www.crescendo.ai/news/latest-ai-news-and-updates))
-12. **AI 내재화·공급망 블록화** — 산업 문법을 바꾸는 지각변동으로 평가. ([KIET](https://kocham.org/wp-content/uploads/2025/12/KIET_%EA%B2%BD%EC%A0%9C%E3%86%8D%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D_2025-021_2026%EB%85%84_%EA%B2%BD%EC%A0%9C%C2%B7%EC%82%B0%EC%97%85_%EC%A0%84%EB%A7%9D.pdf))
-13. **효성중공업 등 전력기기株, AI 데이터센터 수혜** — 북미 전력망 교체·공급부족 장기 성장. ([이코노미스트](https://economist.co.kr/article/view/ecn202605070005))
-14. **조선업, 친환경·해상풍력 중심 재편** — 한화오션 고부가 선박 수주 전략. ([AlphaSquare](https://alphasquare.co.kr/home/stock-summary?code=042660))
-15. **2026년 정부 전략산업 정책 발표** — 반도체·AI·전력·조선 등 핵심 산업 지원 로드맵. ([삼일PwC](https://www.pwc.com/kr/ko/insights/samil-insight/samilpwc_industry-outlook2026.pdf))
-16. **KDI 6월 경제동향** — 내수·수출 흐름 점검, 반도체 회복세 확인. ([KDI](https://www.kdi.re.kr/research/monTrends))
-17. **2026 재보궐선거** 관련 정치 일정 진행. ([Wikipedia](https://en.wikipedia.org/wiki/2026_South_Korean_by-elections))
-18. **HBM4 주도권 경쟁** — 삼성·SK하이닉스·마이크론 엔비디아 16-Hi HBM4 공급 계약 경합. ([TweakTown](https://www.tweaktown.com/news/109495/sk-hynix-samsung-and-micron-fighting-for-nvidia-supply-contracts-for-new-16-hi-hbm4-orders/index.html))
-19. **메모리 가격 상승 사이클** — HBM3E 20% 인상이 한국 메모리 2社 실적 개선 기대. ([Digitimes](https://www.digitimes.com/news/a20251224PD225/hbm3e-samsung-2026-sk-hynix-hbm4.html))
-20. **AI 데이터센터 전력 수요** — 국내외 전력 인프라 투자 확대가 효성중공업·전력기기 수출에 호재. ([데이터센터다이내믹스](https://www.datacenterdynamics.com/en/news/samsung-and-sk-hynix-to-scale-up-memory-production-capacity-in-2026-to-meet-ai-demand/))
+1. 코스피, 반도체 강세로 급반전 — '삼전닉스'가 시총 절반 차지하는 쏠림 논쟁. [nate](https://news.nate.com/view/20260602n21889)
+2. 삼성전자 시총 2,000조 돌파, 코스피 9,000선 가시권. [imbc](https://imnews.imbc.com/replay/2026/nwdesk/article/6826849_37004.html)
+3. 한국 명목 GDP 성장률 10.5%, 1976년 이후 50년 만 최고. [imbc](https://imnews.imbc.com/replay/2026/nwdesk/article/6828934_37004.html)
+4. 6/15 코스피 전망 8,500p(고 9,095·저 7,905), 6월 변동성 지속 주의. [wonforecast](https://wonforecast.com/%EC%BD%94%EC%8A%A4%ED%94%BC-%EC%A7%80%EC%88%98-%EC%A0%84%EB%A7%9D)
+5. 국민의힘, 서울·경기·부산 등 6개 지역 재선거 소청 의결. [khan](https://www.khan.co.kr/)
+6. 오세훈 측 "사전 논의 없는 일방적 결정" 반발. [khan](https://www.khan.co.kr/)
+7. 민주당 "재선거 소청은 선거 불복·부정선거 편승 구태" 비판. [khan](https://www.khan.co.kr/)
+8. 법원, 김명수 전 합참의장 영장 기각 — '2차 계엄' 수사 차질. [khan](https://www.khan.co.kr/)
+9. 이란 매체 "합의문에 호르무즈 통행료 징수권 명시, 미사일·대리세력은 삭제". [khan](https://www.khan.co.kr/)
+10. 유승민 대한체육회장, '개표소 봉쇄' 잠실 시위 관련 "모든 법적 대응 검토". [khan](https://www.khan.co.kr/)
+11. 한은 "금리 추가 인하, 수도권 집값·가계부채·환율 고려 신중 결정". [investing](https://kr.investing.com/news/stock-market-news/article-1766862)
+12. 환율 상승發 물가 상방 압력 — 한은, 환율 변동성 확대 영향 유의. [investing](https://kr.investing.com/news/stock-market-news/article-1766862)
+13. 2026 부동산, 금리·대출한도·공급물량 3대 변수에 체감 양극화 전망. [kbthink](https://kbthink.com/realestate/basics/2026-housing-market.html)
+14. 2026 한국경제 전년比 개선 전망, 단 환율·금융불균형(부동산·가계부채) 제약요인. [pwc](https://www.pwc.com/kr/ko/insights/samil-insight/economic-outlook2026.html)
+15. G7, 인도·한국·브라질·케냐 초청 예정. [wonforecast](https://wonforecast.com/%EC%BD%94%EC%8A%A4%ED%94%BC-%EC%A7%80%EC%88%98-%EC%A0%84%EB%A7%9D)
+16. 6.3 지방선거 후속 — 의료·교통 붕괴, 지역소멸이 화두. [lghellovision](https://news.lghellovision.net/news/articleView.html?idxno=544581)
+17. OECD 6월 세계경제 전망 발표(재정경제부). [korea.kr](https://www.korea.kr/briefing/policyBriefingView.do?newsId=156761126)
+18. 메모리 슈퍼사이클 기대 — 삼성전자 목표가 상향 행렬(NH·현대차·노무라). [bizhankook](https://www.bizhankook.com/bk/article/32208)
+19. 전력기기 수출 호조 지속 — AI 데이터센터·HVDC·친환경 기기 수혜. [alphasquare](https://alphasquare.co.kr/home/stock-summary?code=298040)
+20. 조선 슈퍼사이클·해상풍력 신사업 — 한화오션 등 수주 모멘텀 지속. [alphasquare](https://alphasquare.co.kr/home/theme-factor?theme-id=240)
 
 ---
 
-*본 브리핑은 자동 생성되었으며 투자 권유가 아닙니다. 시세는 2026-06-12 종가 기준, 뉴스는 검색 시점 최신 기사 기준입니다.*
+*본 브리핑은 자동 생성되었습니다. 시세는 직전 거래일(20260612) 종가 기준이며, 뉴스는 전일 저녁~당일 아침 검색 결과입니다.*
