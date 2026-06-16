@@ -33,7 +33,7 @@ KR_TICKERS = {
 
 # 주의: "TLSA"는 Tiziana Life Sciences(바이오 소형주)입니다.
 #       테슬라가 필요하면 "TSLA"로 바꾸세요.
-US_TICKERS = ["NVDA", "AMD", "NVDY", "AMDY", "GOOY", "TLSA"]
+US_TICKERS = ["NVDA", "AMD", "NVDY", "AMDY", "GOOY", "TSLA"]
 
 KST = timezone(timedelta(hours=9))
 
