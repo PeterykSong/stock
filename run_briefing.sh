@@ -16,6 +16,7 @@ LOG="./briefing.log"
 echo "===== $(date '+%F %T') 시작 ====="
 echo "===== $(date '+%F %T') 시작 =====" >> "$LOG"
 git pull --rebase >> "$LOG" 2>&1
+python3 kospi_screener.py --exclude-etf --quiet >> "$LOG" 2>&1
 python3 daily_briefing.py >> "$LOG" 2>&1
 
 if [ "$PUSH_TO_GIT" = "true" ]; then

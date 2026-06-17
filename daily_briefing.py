@@ -13,6 +13,7 @@ daily_briefing.py
               (ANTHROPIC_API_KEY 등). 둘 다 있으면 OS 환경변수가 우선.
 """
 
+import csv
 import os
 import sys
 import html
@@ -61,6 +62,10 @@ GITHUB_RAW = os.environ.get(
     "https://raw.githubusercontent.com/PeterykSong/stock/main/stock_prices_result.md",
 )
 OUTPUT_PATH = os.environ.get("BRIEFING_OUTPUT", "daily_briefing.md")
+SCREENER_CSV = os.environ.get(
+    "SCREENER_CSV",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "kospi_screener.csv"),
+)
 MODEL = os.environ.get("CLAUDE_MODEL", "claude-sonnet-4-6")  # opus-4-8 / haiku-4-5 도 가능
 KST = datetime.timezone(datetime.timedelta(hours=9))
 
@@ -161,6 +166,51 @@ def format_stock_table(rows: list) -> str:
         except ValueError:
             chg_str = r["change"]
         lines.append(f"| {r['name']} | {r['ticker']} | {r['price']} | {chg_str} | {r['currency']} |")
+    return "\n".join(lines)
+
+
+def get_top_screener_stocks(csv_path: str, top_n: int = 10) -> list:
+    """kospi_screener.csv 상위 top_n 종목의 (Name, Symbol) 목록을 반환"""
+    if not os.path.exists(csv_path):
+        return []
+    pairs = []
+    with open(csv_path, encoding="utf-8-sig", newline="") as f:
+        for row in csv.DictReader(f):
+            name, symbol = row.get("Name"), row.get("Symbol")
+            if name and symbol:
+                pairs.append((name, symbol))
+            if len(pairs) >= top_n:
+                break
+    return pairs
+
+
+def collect_screener_news(stocks: list) -> list:
+    """스크리너 상위 종목별로 뉴스 1건씩 검색"""
+    items = []
+    for name, symbol in stocks:
+        url = SEARCH_RSS.format(q=urllib.parse.quote(name))
+        try:
+            articles = parse_rss(fetch(url), limit=1)
+        except Exception as e:
+            print(f"[warn] '{name}' 스크리너 뉴스 수집 실패: {e}", file=sys.stderr)
+            articles = []
+        article = articles[0] if articles else None
+        items.append({"name": name, "symbol": symbol, "article": article})
+    return items
+
+
+def format_screener_news(items: list) -> str:
+    """스크리너 상위 종목 뉴스를 마크다운 목록으로 포맷"""
+    if not items:
+        return "_(스크리너 결과가 없습니다)_"
+    lines = []
+    for it in items:
+        art = it["article"]
+        if art:
+            src = f" ({art['source']})" if art.get("source") else ""
+            lines.append(f"- **{it['name']}({it['symbol']})**: [{art['title']}]({art['link']}){src}")
+        else:
+            lines.append(f"- **{it['name']}({it['symbol']})**: _(관련 뉴스 없음)_")
     return "\n".join(lines)
 
 
@@ -265,12 +315,19 @@ def main():
         summary = summarize(client, label, sections[label], count=10)
         parts.append(f"## {icons.get(label,'')} {label}\n\n{summary}\n")
 
-    # 4) 마크다운 작성
+    # 4) 스크리너 상위 종목 뉴스
+    top_screener_stocks = get_top_screener_stocks(SCREENER_CSV, top_n=10)
+    print(f"[info] 스크리너 상위 종목 {len(top_screener_stocks)}개 뉴스 검색 중")
+    screener_news = collect_screener_news(top_screener_stocks)
+    screener_news_md = format_screener_news(screener_news)
+
+    # 5) 마크다운 작성
     stock_table = format_stock_table(stock_rows)
     header = (
         f"# 📰 데일리 브리핑 ({now:%Y-%m-%d} KST)\n\n"
         f"> 생성 시각: {now:%Y-%m-%d %H:%M} KST / 뉴스 소스: Google 뉴스\n\n"
         f"## 📊 관심 종목 주가\n\n{stock_table}\n\n---\n\n"
+        f"## 🏆 KOSPI 스크리너 상위 종목 뉴스\n\n{screener_news_md}\n\n---\n\n"
     )
     footer = (
         "\n---\n*본 브리핑은 Google 뉴스 헤드라인을 Claude로 자동 요약한 것으로, "
