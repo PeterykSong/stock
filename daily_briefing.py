@@ -157,8 +157,7 @@ def format_stock_table(rows: list) -> str:
     for r in rows:
         try:
             chg = float(r["change"])
-            arrow = "▲" if chg > 0 else ("▼" if chg < 0 else "―")
-            chg_str = f"{arrow} {abs(chg):.2f}%"
+            chg_str = f"{chg:+.2f}%" if chg != 0 else "0.00%"
         except ValueError:
             chg_str = r["change"]
         lines.append(f"| {r['name']} | {r['ticker']} | {r['price']} | {chg_str} | {r['currency']} |")

@@ -13,6 +13,7 @@ PUSH_TO_GIT="true"                    # git 자동 커밋/푸시 여부
 export BRIEFING_OUTPUT="./daily_briefing.md"
 
 LOG="./briefing.log"
+echo "===== $(date '+%F %T') 시작 ====="
 echo "===== $(date '+%F %T') 시작 =====" >> "$LOG"
 git pull --rebase >> "$LOG" 2>&1
 python3 daily_briefing.py >> "$LOG" 2>&1
@@ -23,4 +24,5 @@ if [ "$PUSH_TO_GIT" = "true" ]; then
   git push >> "$LOG" 2>&1 || echo "[warn] git push 실패" >> "$LOG"
 fi
 
+echo "===== $(date '+%F %T') 종료 ====="
 echo "===== $(date '+%F %T') 종료 =====" >> "$LOG"
