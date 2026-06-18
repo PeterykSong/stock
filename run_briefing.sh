@@ -20,7 +20,7 @@ python3 kospi_screener.py --exclude-etf --quiet >> "$LOG" 2>&1
 python3 daily_briefing.py >> "$LOG" 2>&1
 
 if [ "$PUSH_TO_GIT" = "true" ]; then
-  git add daily_briefing.md
+  git add daily_briefing.md kospi_screener.csv
   git commit -m "chore: 데일리 브리핑 자동 업데이트 $(date '+%F %T')" >> "$LOG" 2>&1 || echo "변경 없음" >> "$LOG"
   git push >> "$LOG" 2>&1 || echo "[warn] git push 실패" >> "$LOG"
 fi
