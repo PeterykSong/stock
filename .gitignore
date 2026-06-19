@@ -1,2 +1,4 @@
 .env
 briefing.log
+__pycache__/
+*.pyc
