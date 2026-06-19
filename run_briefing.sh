@@ -9,8 +9,9 @@ PUSH_TO_GIT="true"                    # git 자동 커밋/푸시 여부
 # (이 셸 스크립트에서 키를 export 할 필요가 없습니다)
 
 
-# 결과를 git 저장소 안에 직접 생성
-export BRIEFING_OUTPUT="./daily_briefing.md"
+# 결과를 git 저장소 안에 날짜별 파일로 생성 (날짜별 기록 보관)
+BRIEFING_FILE="daily_briefing_$(date '+%Y%m%d').md"
+export BRIEFING_OUTPUT="./${BRIEFING_FILE}"
 
 LOG="./briefing.log"
 echo "===== $(date '+%F %T') 시작 ====="
@@ -20,7 +21,7 @@ python3 kospi_screener.py --exclude-etf --quiet >> "$LOG" 2>&1
 python3 daily_briefing.py >> "$LOG" 2>&1
 
 if [ "$PUSH_TO_GIT" = "true" ]; then
-  git add daily_briefing.md kospi_screener.csv
+  git add "$BRIEFING_FILE" kospi_screener.csv
   git commit -m "chore: 데일리 브리핑 자동 업데이트 $(date '+%F %T')" >> "$LOG" 2>&1 || echo "변경 없음" >> "$LOG"
   git push >> "$LOG" 2>&1 || echo "[warn] git push 실패" >> "$LOG"
 fi

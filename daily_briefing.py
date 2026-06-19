@@ -6,7 +6,7 @@ daily_briefing.py
 1) GitHub의 stock_prices_result.md 를 읽어 관심 종목(watchlist)을 추출
 2) Google 뉴스 RSS 에서 국내/국제/미국/종목 뉴스를 수집
 3) Anthropic API(Claude)로 카테고리별 10건씩 요약
-4) daily_briefing.md 생성 (옵션: git 자동 커밋/푸시)
+4) daily_briefing_YYYYMMDD.md 생성 (옵션: git 자동 커밋/푸시)
 
 필요 패키지:  pip install anthropic   (선택: python-dotenv)
 환경설정:     스크립트와 같은 폴더의 .env 파일 또는 OS 환경변수
@@ -61,7 +61,6 @@ GITHUB_RAW = os.environ.get(
     "STOCK_SOURCE_URL",
     "https://raw.githubusercontent.com/PeterykSong/stock/main/stock_prices_result.md",
 )
-OUTPUT_PATH = os.environ.get("BRIEFING_OUTPUT", "daily_briefing.md")
 SCREENER_CSV = os.environ.get(
     "SCREENER_CSV",
     os.path.join(os.path.dirname(os.path.abspath(__file__)), "kospi_screener.csv"),
@@ -283,6 +282,7 @@ def main():
     client = anthropic.Anthropic(api_key=api_key)
 
     now = datetime.datetime.now(KST)
+    output_path = os.environ.get("BRIEFING_OUTPUT") or f"daily_briefing_{now:%Y%m%d}.md"
     print(f"[info] 브리핑 생성 시작: {now:%Y-%m-%d %H:%M} KST")
 
     # 1) 종목 표 로드
@@ -335,9 +335,9 @@ def main():
     )
     md = header + "\n".join(parts) + footer
 
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+    with open(output_path, "w", encoding="utf-8") as f:
         f.write(md)
-    print(f"[done] 저장 완료 → {OUTPUT_PATH}")
+    print(f"[done] 저장 완료 → {output_path}")
 
 
 if __name__ == "__main__":
