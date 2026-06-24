@@ -14,16 +14,35 @@ BRIEFING_FILE="daily_briefing_$(date '+%Y%m%d').md"
 export BRIEFING_OUTPUT="./${BRIEFING_FILE}"
 
 LOG="./briefing.log"
-echo "===== $(date '+%F %T') 시작 ====="
-echo "===== $(date '+%F %T') 시작 =====" >> "$LOG"
+
+log() {
+  echo "[$(date '+%F %T')] $*" | tee -a "$LOG"
+}
+
+log "===== 시작 ====="
+
+log "[0/4] git pull --rebase 중..."
+git pull --rebase >> "$LOG" 2>&1
+log "[0/4] git pull --rebase 완료"
+
+log "[1/4] kospi_screener.py 실행 중..."
 python3 kospi_screener.py --exclude-etf  >> "$LOG" 2>&1
+log "[1/4] kospi_screener.py 완료"
+
+log "[2/4] stock_prices.py 실행 중..."
+python3 stock_prices.py >> "$LOG" 2>&1
+log "[2/4] stock_prices.py 완료"
+
+log "[3/4] daily_briefing.py 실행 중..."
 python3 daily_briefing.py >> "$LOG" 2>&1
+log "[3/4] daily_briefing.py 완료"
 
 if [ "$PUSH_TO_GIT" = "true" ]; then
-  git add "$BRIEFING_FILE" kospi_screener.csv
+  log "[4/4] git commit/push 중..."
+  git add "$BRIEFING_FILE" kospi_screener.csv stock_prices_result.csv stock_prices_result.md
   git commit -m "chore: 데일리 브리핑 자동 업데이트 $(date '+%F %T')" >> "$LOG" 2>&1 || echo "변경 없음" >> "$LOG"
   git push >> "$LOG" 2>&1 || echo "[warn] git push 실패" >> "$LOG"
+  log "[4/4] git commit/push 완료"
 fi
 
-echo "===== $(date '+%F %T') 종료 ====="
-echo "===== $(date '+%F %T') 종료 =====" >> "$LOG"
+log "===== 종료 ====="

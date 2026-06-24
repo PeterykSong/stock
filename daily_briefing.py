@@ -57,9 +57,9 @@ _load_env_file(_ENV_PATH)
 
 
 # ───────────────────────── 설정 ─────────────────────────
-GITHUB_RAW = os.environ.get(
+STOCK_SOURCE = os.environ.get(
     "STOCK_SOURCE_URL",
-    "https://raw.githubusercontent.com/PeterykSong/stock/main/stock_prices_result.md",
+    os.path.join(os.path.dirname(os.path.abspath(__file__)), "stock_prices_result.md"),
 )
 SCREENER_CSV = os.environ.get(
     "SCREENER_CSV",
@@ -285,9 +285,13 @@ def main():
     output_path = os.environ.get("BRIEFING_OUTPUT") or f"daily_briefing_{now:%Y%m%d}.md"
     print(f"[info] 브리핑 생성 시작: {now:%Y-%m-%d %H:%M} KST")
 
-    # 1) 종목 표 로드
+    # 1) 종목 표 로드 (로컬 stock_prices_result.md, STOCK_SOURCE_URL로 원격 URL도 지정 가능)
     try:
-        stock_md = fetch(GITHUB_RAW)
+        if STOCK_SOURCE.startswith("http://") or STOCK_SOURCE.startswith("https://"):
+            stock_md = fetch(STOCK_SOURCE)
+        else:
+            with open(STOCK_SOURCE, encoding="utf-8") as f:
+                stock_md = f.read()
         watchlist = get_watchlist(stock_md)
         stock_rows = parse_stock_table(stock_md)
     except Exception as e:
