@@ -41,7 +41,21 @@ if [ "$PUSH_TO_GIT" = "true" ]; then
   log "[4/4] git commit/push 중..."
   git add "$BRIEFING_FILE" kospi_screener.csv stock_prices_result.csv stock_prices_result.md
   git commit -m "chore: 데일리 브리핑 자동 업데이트 $(date '+%F %T')" >> "$LOG" 2>&1 || echo "변경 없음" >> "$LOG"
-  git push >> "$LOG" 2>&1 || echo "[warn] git push 실패" >> "$LOG"
+
+  # 파이프라인 실행 중 원격에 새 커밋이 쌓였을 수 있으므로,
+  # push 실패 시 pull --rebase 후 재시도 (최대 3회)
+  push_ok=false
+  for attempt in 1 2 3; do
+    if git push >> "$LOG" 2>&1; then
+      push_ok=true
+      break
+    fi
+    echo "[warn] git push 실패 (시도 $attempt/3) — pull --rebase 후 재시도" >> "$LOG"
+    git pull --rebase >> "$LOG" 2>&1 || break
+  done
+  if [ "$push_ok" = "false" ]; then
+    echo "[warn] git push 최종 실패" >> "$LOG"
+  fi
   log "[4/4] git commit/push 완료"
 fi
 
