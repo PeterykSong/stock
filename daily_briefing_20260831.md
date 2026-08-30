@@ -1,0 +1,91 @@
+# 📰 데일리 브리핑 (2026-08-31 KST)
+
+> 생성 시각: 2026-08-31 07:33 KST / 뉴스 소스: Google 뉴스
+
+## 📊 관심 종목 주가
+
+| 종목 | 티커 | 종가 | 등락률 | 통화 |
+|---|---|---:|---:|---|
+| 삼성전자 | 005930 | 257,000 | -3.38% | KRW |
+| SK하이닉스 | 000660 | 1,653,000 | -4.45% | KRW |
+| 한화오션 | 042660 | 88,500 | -1.23% | KRW |
+| 효성중공업 | 298040 | 3,153,000 | +2.40% | KRW |
+| NVDA | NVDA | nan | +nan% | USD |
+| AMD | AMD | nan | +nan% | USD |
+| NVDY | NVDY | nan | +nan% | USD |
+| AMDY | AMDY | nan | +nan% | USD |
+| GOOY | GOOY | nan | +nan% | USD |
+| TSLA | TSLA | nan | +nan% | USD |
+| MSFT | MSFT | nan | +nan% | USD |
+
+---
+
+## 🏆 KOSPI 스크리너 상위 종목 뉴스
+
+- **효성화학(298000)**: [효성화학 용연공장, 선암동 취약계층에 200만원 기탁 - 울산종합일보](https://news.google.com/rss/articles/CBMic0FVX3lxTE82d0JaTUhuQlNkTDQ4T09taWtfajgxbU9XeDBEODU0WmVsM09QeXphd2w3LWtvRkFja2Y1ckhrNTg4bXhyUHQ1SFl3WWxIcGNQaHQxWUdVa1FVdXpIS0ZGVHk2bk5NWGM4MEQyNXlfOUpIWlk?oc=5) (울산종합일보)
+- **달바글로벌(483650)**: [[코스피 현미경 분석] 달바글로벌, 북미·유럽 지역 고성장세로 주가 다시 뛸까 - 데일리인베스트](https://news.google.com/rss/articles/CBMia0FVX3lxTE9QWlY3ZFFaWGF0LXBqa056YmlwUFBWOTlIMF82WVZHdEE1MXZkZ1p1OGdOS2hHOUJ4Q3BjOFJTV2NkbUg1Z0dzX3N2OUpyM2UxcnpPbExFQ2I2RzdheEc3aWctS3hCZm94akVV0gFvQVVfeXFMT2VRdUtZbGY1V1FDV0RaWUdVd0dqdVd6Q3MxUTMzcnlGSFhOd0FaQzBRbHRFZFJ5czlSRXB5bVA3ZlExMm5YMlJpZmI0d0gzelZ3Yk4wU2k2cHpfV0pfOHZfa2NDWDVZVm1pRjdwUmdj?oc=5) (데일리인베스트)
+- **파미셀(005690)**: [파미셀, 더마 코스메틱 브랜드 ‘플레이셀’ 리뉴얼 출시 - 팜이데일리](https://news.google.com/rss/articles/CBMibkFVX3lxTFB3R1haXzV5cmVMUlJjaFY5azBUa3p3SEt0VHdzRS1YVk5tU3dPYnlQamttX3A5UXFEVDN2aWtIb09WaUlqX0pFdzVEVTVQeHBBcEVfWGppd3lfQkNiM3VTODkySDFreF90YzNSSUVB?oc=5) (팜이데일리)
+- **한국쉘석유(002960)**: [한국쉘석유, 주주 우승환 측 주식등 보유 비율 1.12%p 증가 - 디지털투데이](https://news.google.com/rss/articles/CBMic0FVX3lxTFBTYkl2YlhtSWNHS0Rvcm0zdm1CMTBvZ19zb0FxYzhoWU1MV3ZzaHhkVnEzTDk2M3FjS2NLZU9ybTU1bUpnUDg1bXpBS1dFbll3SElaZ1VrZ0ZfWTNKb1Q0UWx6U2tXZ1dZendvU1hDN1U2eEE?oc=5) (디지털투데이)
+- **HD현대마린엔진(071970)**: [일감 1조5000억 쌓였는데 공장은 한계…HD현대마린엔진 ‘생산성 승부’ - 뉴스퀘스트](https://news.google.com/rss/articles/CBMib0FVX3lxTFBrRzM0LU5tZ3FFSWVkdTNScjY3VThvSS1MT0s0Y0VQRWFTYmlCQ3VSRDdHYWp2bG85ekpqRnFUWE5uN3NJOURBWDlUZW44QXEzTk42UnVNNE5DUldaUEhSdjVkRHI1S3c2TnhKdFg5d9IBc0FVX3lxTE9sVUpyTkpDcjVFQlpLUko3aVVobHNPbEc3V0ZoMHp4VXBLQ01Ba1oteWRGSkZzc09SWHE4dkJWOWhwX0c3TUtXWjIxOEg3djRDMWZTRkx1MkNJSHk4M1kwYjhwVUpDX0xIdjdmazc1cWFSRU0?oc=5) (뉴스퀘스트)
+- **현대로템(064350)**: [현대차그룹 방산, 현대로템으로 일원화하기로 - 조선일보](https://news.google.com/rss/articles/CBMijwFBVV95cUxPUlRGTUFhaGNLcl84cEhqdUZKWkFPcnRnRkpMMF9tTlYzWG1uN1VTMEZCQ3M1ZzlnbXV3enUxZ2NraUQ4ZHZzZDdHOUFleDJFMU54NmZVMEg5dHVrOEpXNU1NZEJmMHVCVC1BRjRHc0R5dmFra2diS0dLazNMenptQmI0TUF0b2ljSjFNUk5Raw?oc=5) (조선일보)
+- **평화홀딩스(010770)**: [평화홀딩스, 평화산업 주식 5일 연속 장내 매수... 지분율 63% 돌파 - 데이터투자](https://news.google.com/rss/articles/CBMic0FVX3lxTE9WelN0SmR4YjVTZXJmWnVsT3R5UzB1S0NoRHlvM1RUNU9TYXYySjV6R0xfQjB0TXlHZXA1SUUzcHNHb2lOV3hqOG4zUFFneS1CT0pEaUZ3dlM2bGx6akhnMVFyZXE2RWJ2c2tvU1hwTTZYS3M?oc=5) (데이터투자)
+- **SK스퀘어(402340)**: [SK스퀘어(402340) - 매일경제 마켓](https://news.google.com/rss/articles/CBMilwFBVV95cUxONzlQTWV2cnVJNjczNHBqMW5lZUVBNUkwNmFMUEl4YzhCZmhqUkE3Ujg0cUxWb0NnUm82YlZlbmswdHQ1dWxRYzlDMTRyUUtmWWNjUWdsdXpjZkJRNTVLOEVEd0FlRmZvR0dXMDNiQXlSNEpTWm1NeXFQWFdJWVY0ZjFFWGlHaVRNcUZaWG9LZ2FrNWt1S0ln?oc=5) (매일경제 마켓)
+- **한화오션(042660)**: [세종대왕함 창정비 한화오션에 맡긴다…이지스함 첫 민간 MRO - edaily.co.kr](https://news.google.com/rss/articles/CBMigAFBVV95cUxQNnZ2dGc0ZGpQc1U0MUpnaWZ2eGNXOE1GSUtxa3VuMjZiRXkxWXAxd2dIdUdnY0ZEZ1RueXc2dHRtdGtTQkxhc1MyTURoMHhCV0VWOGM0WUJLcXFuZnpzN2JCR1FuaERGNUJJdjNDclA3MUlWYmFBeU8xSkZUeFh4VA?oc=5) (edaily.co.kr)
+- **금호타이어(073240)**: [타이어 3사 대표, 경영능력…정일택 금호, 이상훈·안종선 한타, 김현석 넥센 순 - 코리아리포트](https://news.google.com/rss/articles/CBMicEFVX3lxTE4tUWs4clAtdlRtMkZtNUtsYjFnS0l4QWRyNWdTdmw1aWEtYmNqWVNxNjZ0dy1iUElwUkM3Z1BnelRIdTJlOUFwQ3R3VU8tbmdGbW9LTEF1QnpPbHdYUWlCNGVFNmhoR0hucmNMRWRkSWM?oc=5) (코리아리포트)
+
+---
+
+## 🇰🇷 국내 주요뉴스
+
+1. 무안 참사 닷새째, 150km 떨어진 인도 해상에서 시신 추가 수습되며 피해 확산. — (경향신문)
+2. 미군이 약 한 달 만에 이란 호르무즈 기뢰 발사대를 공습하며 긴장 재고조. — (한겨레)
+3. 중부지방에 내일까지 최대 200mm 집중호우 예보로 피해 우려 증가. — (KBS 뉴스)
+4. 청와대·대법원이 김민기 대법관 인선을 두고 타협 없이 정면충돌 양상. — (한겨레)
+5. 이재명 정부, 경제·부동산 참모진 교체…책임론 컸던 김용범은 유임. — (조선일보)
+6. 용혜인 의원, 1990년생으로 역대 최연소 장관 후보자에 지명. — (한겨레)
+7. 마세라티 음주운전으로 배달 노동자 사망케 한 운전자 도주 우려로 구속. — (동아일보)
+8. 러시아 에너지시설 대규모 공습 예고, 우크라이나는 드론 1천 기 일일 공습 맞대응. — (연합뉴스)
+9. 국민의힘, 장동혁이 추진한 당협위원장 직선제 도입안을 최고위서 재논의. — (연합뉴스)
+10. 트럼프·김정은 1차 회담 후 중간선거 이후 2차 회담 가능성 제기. — (연합뉴스TV)
+
+## 🌍 국제 주요뉴스
+
+1. 미군이 이란의 호르무즈 기뢰 발사대를 공습하며 한 달여 만에 이란 타격을 재개했다. — (한겨레)
+2. 미군 수뇌부가 국방장관에게 대이란 작전의 장기 지속이 불가능하다고 경고한 것으로 알려졌다. — (뉴스핌)
+3. 이란 대통령이 미국에 전쟁 6개월째 종전 합의 이행을 공개적으로 촉구했다. — (MBC 뉴스)
+4. 오만 인근 호르무즈 해협에서 유조선이 피격됐으나 인명 피해는 없는 것으로 전해졌다. — (연합뉴스TV)
+5. CIA 국장이 방러 당시 미·러·우크라이나 3자 종전 정상회담 개최를 제안한 것으로 보도됐다. — (연합뉴스)
+6. 러시아가 우크라이나 에너지 시설 대규모 공습을 예고하고 우크라이나도 매일 드론 1천 기 공습으로 맞서고 있다. — (연합뉴스)
+7. 시진핑이 푸틴에 이어 중앙아시아·중동·인도 순방으로 반트럼프 외교 전선 구축에 나섰다. — (한겨레)
+8. 트럼프가 베네수엘라 석유 사업에 펜타곤 지분을 포함시켜 미 정부가 직접 투자자로 나서는 방안을 추진 중이다. — (뉴스핌)
+9. 트럼프와 김정은의 1차 회담 후 중간선거 이후 2차 회담 가능성이 거론되고 있다. — (연합뉴스TV)
+10. 네팔·중국 접경지 산사태로 자연댐 호수가 추가 형성되어 네팔 측 홍수 위험이 여전한 상황이다. — (네이트)
+
+## 🇺🇸 미국 주요뉴스
+
+1. 그랜드캐니언 극심한 돌발홍수로 최소 20명 실종 — (NBC News)
+2. 미군, 호르무즈 해협 긴장 속 이란 라라크섬 발사대 타격 — (The Guardian)
+3. ICE, 아프가니스탄인 등을 아프리카로 추방하는 '제3국 추방' 확대 — (CBS News)
+4. 트럼프, 베네수엘라 석유 매장량 접근권 확보 협상 타결 — (AP News)
+5. 미 우편 투표 규정 개편으로 수백만 명 우편 투표 차단 우려 — (The New York Times)
+6. 미-캐나다 관세 전쟁 속 핵심 금속 공급망에 미치는 경제적 영향 — (CNBC)
+7. 트럼프, NBC 앵커 크리스틴 웰커를 방송 규제기관에 신고 위협 — (Al Jazeera)
+8. 구글맵, 트럼프 행정명령 따라 미국 내 온타리오호를 '아메리카호'로 변경 — (Fox Business)
+9. 뉴저지 트렌턴 총기 난사로 2명 사망·8명 부상 — (6abc Philadelphia)
+10. 마두로 전 베네수엘라 대통령, 미국 구치소에서 근황 사진 공개 — (NDTV)
+
+## 📈 주식 종목관련 주요뉴스
+
+1. SK하이닉스, 미국 내 첫 HBM 생산 거점 착공으로 현지 공급망 강화 — (충청매일)
+2. 엔비디아, 2분기 깜짝 실적 발표…오픈웨이트 AI 생태계 확장 기대감 고조 — (Investing.com 한국어)
+3. 중국 CXMT, D램 기술력 급성장으로 삼성·SK하이닉스 추격 가속화 — (v.daum.net)
+4. 한화오션, 이지스함 세종대왕함 창정비 최초 민간 MRO 수주 — (뉴스1)
+5. 효성중공업, 글로벌 초고압 변압기 점유율 1위·북미 매출 1조원 돌파 — (조선일보)
+6. SK하이닉스, 40조 주주환원에 이어 추가 환원책 발표 예정 — (뉴시스)
+7. 마이크로소프트, AI 클라우드 애저 호조로 4분기 실적 개선·주가 급등 — (simplywall.st)
+8. 드러켄밀러, AMD 지분 대거 확대…AI 추론 시장 성장 기대 반영 — (Investing.com 한국어)
+9. 삼성전자 자사주 소각 시 지분율 상승으로 '10%룰' 규제 걸림돌 — (뉴스1)
+10. 테슬라, 중국 대규모 리콜 발표로 브랜드 신뢰 훼손 우려 부각 — (인포스탁데일리)
+
+---
+*본 브리핑은 Google 뉴스 헤드라인을 Claude로 자동 요약한 것으로, 투자 판단의 책임은 이용자에게 있습니다.*
