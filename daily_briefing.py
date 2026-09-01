@@ -354,11 +354,12 @@ def main():
         summary = summarize(client, label, sections[label], count=10)
         parts.append(f"## {icons.get(label,'')} {label}\n\n{summary}\n")
 
-    # 4) 스크리너 상위 종목 (표 + 뉴스)
-    top_screener_rows = get_top_screener_rows(SCREENER_CSV, top_n=10)
-    print(f"[info] 스크리너 상위 종목 {len(top_screener_rows)}개 뉴스 검색 중")
-    screener_table_md = format_screener_table(top_screener_rows)
-    screener_news = collect_screener_news(top_screener_rows)
+    # 4) 스크리너 상위 종목 (표는 상위 50개, 뉴스 검색은 상위 10개만)
+    table_screener_rows = get_top_screener_rows(SCREENER_CSV, top_n=50)
+    news_screener_rows = table_screener_rows[:10]
+    print(f"[info] 스크리너 상위 {len(table_screener_rows)}개 표 작성, {len(news_screener_rows)}개 뉴스 검색 중")
+    screener_table_md = format_screener_table(table_screener_rows)
+    screener_news = collect_screener_news(news_screener_rows)
     screener_news_md = format_screener_news(screener_news)
 
     # 5) 마크다운 작성
