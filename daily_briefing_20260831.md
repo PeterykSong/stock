@@ -4,34 +4,47 @@
 
 ## 📊 관심 종목 주가
 
-| 종목 | 티커 | 종가 | 등락률 | 통화 |
-|---|---|---:|---:|---|
-| 삼성전자 | 005930 | 257,000 | -3.38% | KRW |
-| SK하이닉스 | 000660 | 1,653,000 | -4.45% | KRW |
-| 한화오션 | 042660 | 88,500 | -1.23% | KRW |
-| 효성중공업 | 298040 | 3,153,000 | +2.40% | KRW |
-| NVDA | NVDA | nan | +nan% | USD |
-| AMD | AMD | nan | +nan% | USD |
-| NVDY | NVDY | nan | +nan% | USD |
-| AMDY | AMDY | nan | +nan% | USD |
-| GOOY | GOOY | nan | +nan% | USD |
-| TSLA | TSLA | nan | +nan% | USD |
-| MSFT | MSFT | nan | +nan% | USD |
+| 종목 | 티커 | 종가 | 등락률 | RSI(14) | 통화 |
+|---|---|---:|---:|---:|---|
+| 삼성전자 | 005930 | 260,000 | +1.17% | 49.7 | KRW |
+| SK하이닉스 | 000660 | 1,674,000 | +1.27% | 48.74 | KRW |
+| 한화오션 | 042660 | 88,000 | -0.56% | 48.7 | KRW |
+| 효성중공업 | 298040 | 2,963,000 | -6.03% | 52.81 | KRW |
+| NVDA | NVDA | 227.98 | +8.74% | 61.42 | USD |
+| AMD | AMD | 476.67 | -0.89% | 47.13 | USD |
+| NVDY | NVDY | 12.95 | +6.61% | 61.48 | USD |
+| AMDY | AMDY | 43.01 | -0.78% | 46.16 | USD |
+| GOOY | GOOY | 12.11 | -0.16% | 45.73 | USD |
+| TSLA | TSLA | 354.81 | +2.60% | 53.81 | USD |
+| MSFT | MSFT | 505.06 | +1.75% | 70.95 | USD |
 
 ---
 
-## 🏆 KOSPI 스크리너 상위 종목 뉴스
+## 🏆 KOSPI 스크리너 상위 종목
 
-- **효성화학(298000)**: [효성화학 용연공장, 선암동 취약계층에 200만원 기탁 - 울산종합일보](https://news.google.com/rss/articles/CBMic0FVX3lxTE82d0JaTUhuQlNkTDQ4T09taWtfajgxbU9XeDBEODU0WmVsM09QeXphd2w3LWtvRkFja2Y1ckhrNTg4bXhyUHQ1SFl3WWxIcGNQaHQxWUdVa1FVdXpIS0ZGVHk2bk5NWGM4MEQyNXlfOUpIWlk?oc=5) (울산종합일보)
-- **달바글로벌(483650)**: [[코스피 현미경 분석] 달바글로벌, 북미·유럽 지역 고성장세로 주가 다시 뛸까 - 데일리인베스트](https://news.google.com/rss/articles/CBMia0FVX3lxTE9QWlY3ZFFaWGF0LXBqa056YmlwUFBWOTlIMF82WVZHdEE1MXZkZ1p1OGdOS2hHOUJ4Q3BjOFJTV2NkbUg1Z0dzX3N2OUpyM2UxcnpPbExFQ2I2RzdheEc3aWctS3hCZm94akVV0gFvQVVfeXFMT2VRdUtZbGY1V1FDV0RaWUdVd0dqdVd6Q3MxUTMzcnlGSFhOd0FaQzBRbHRFZFJ5czlSRXB5bVA3ZlExMm5YMlJpZmI0d0gzelZ3Yk4wU2k2cHpfV0pfOHZfa2NDWDVZVm1pRjdwUmdj?oc=5) (데일리인베스트)
-- **파미셀(005690)**: [파미셀, 더마 코스메틱 브랜드 ‘플레이셀’ 리뉴얼 출시 - 팜이데일리](https://news.google.com/rss/articles/CBMibkFVX3lxTFB3R1haXzV5cmVMUlJjaFY5azBUa3p3SEt0VHdzRS1YVk5tU3dPYnlQamttX3A5UXFEVDN2aWtIb09WaUlqX0pFdzVEVTVQeHBBcEVfWGppd3lfQkNiM3VTODkySDFreF90YzNSSUVB?oc=5) (팜이데일리)
+| 종목 | 티커 | 종가 | RSI(14) | PBR | ROE | Score |
+|---|---|---:|---:|---:|---:|---:|
+| 효성화학 | 298000 | 58,000 | 38.62 | 0.59 | 82.06% | 0.745 |
+| 한국쉘석유 | 002960 | 498,500 | 46.35 | 4.62 | 34.36% | 0.676 |
+| 파미셀 | 005690 | 11,110 | 48.28 | 5.38 | 32.51% | 0.672 |
+| SK스퀘어 | 402340 | 1,037,000 | 45.96 | 4.95 | 31.83% | 0.653 |
+| 달바글로벌 | 483650 | 220,000 | 45.92 | 13.73 | 41.16% | 0.630 |
+| HD현대마린엔진 | 071970 | 52,100 | 43.97 | 3.61 | 33.77% | 0.617 |
+| SB성보 | 003080 | 2,235 | 49.49 | 0.28 | 22.43% | 0.615 |
+| 평화홀딩스 | 010770 | 3,635 | 41.67 | 0.41 | 27.26% | 0.609 |
+| 금호타이어 | 073240 | 7,360 | 54.62 | 1.04 | 17.11% | 0.601 |
+| 한화오션 | 042660 | 88,000 | 48.61 | 4.37 | 19.90% | 0.595 |
+
+- **효성화학(298000)**: [효성화학, 오늘부터 거래재개…모회사 지원에 본업 회복까지 - 연합인포맥스](https://news.google.com/rss/articles/CBMicEFVX3lxTFBWRFNtdnZuamg2emI3UDdSNlpsU2NKdnFRT0NGaVEyUjFRV3I1SzB5SmNZY0dSUkdjejBoSUtZUklWYmZVdDdBVVp2dlJiWGhkUEp6Nmo5OTgxc2F3RTByaXR3NUszSm55ci03S3dtSTg?oc=5) (연합인포맥스)
 - **한국쉘석유(002960)**: [한국쉘석유, 주주 우승환 측 주식등 보유 비율 1.12%p 증가 - 디지털투데이](https://news.google.com/rss/articles/CBMic0FVX3lxTFBTYkl2YlhtSWNHS0Rvcm0zdm1CMTBvZ19zb0FxYzhoWU1MV3ZzaHhkVnEzTDk2M3FjS2NLZU9ybTU1bUpnUDg1bXpBS1dFbll3SElaZ1VrZ0ZfWTNKb1Q0UWx6U2tXZ1dZendvU1hDN1U2eEE?oc=5) (디지털투데이)
-- **HD현대마린엔진(071970)**: [일감 1조5000억 쌓였는데 공장은 한계…HD현대마린엔진 ‘생산성 승부’ - 뉴스퀘스트](https://news.google.com/rss/articles/CBMib0FVX3lxTFBrRzM0LU5tZ3FFSWVkdTNScjY3VThvSS1MT0s0Y0VQRWFTYmlCQ3VSRDdHYWp2bG85ekpqRnFUWE5uN3NJOURBWDlUZW44QXEzTk42UnVNNE5DUldaUEhSdjVkRHI1S3c2TnhKdFg5d9IBc0FVX3lxTE9sVUpyTkpDcjVFQlpLUko3aVVobHNPbEc3V0ZoMHp4VXBLQ01Ba1oteWRGSkZzc09SWHE4dkJWOWhwX0c3TUtXWjIxOEg3djRDMWZTRkx1MkNJSHk4M1kwYjhwVUpDX0xIdjdmazc1cWFSRU0?oc=5) (뉴스퀘스트)
-- **현대로템(064350)**: [현대차그룹 방산, 현대로템으로 일원화하기로 - 조선일보](https://news.google.com/rss/articles/CBMijwFBVV95cUxPUlRGTUFhaGNLcl84cEhqdUZKWkFPcnRnRkpMMF9tTlYzWG1uN1VTMEZCQ3M1ZzlnbXV3enUxZ2NraUQ4ZHZzZDdHOUFleDJFMU54NmZVMEg5dHVrOEpXNU1NZEJmMHVCVC1BRjRHc0R5dmFra2diS0dLazNMenptQmI0TUF0b2ljSjFNUk5Raw?oc=5) (조선일보)
+- **파미셀(005690)**: [파미셀 주가 110원 하락 후 장마감 - 아시아뉴스통신](https://news.google.com/rss/articles/CBMiXEFVX3lxTE1SSGdNOGtKbDllLURkRTBVblIyU0w4Tm9Pd1dadkM3Q28yckdLbENtUkVQcThyYWlEQWxnb1hmUUwtNGFQR29teDJ5aWFTUmczMHozWEJLUTg0YWdI?oc=5) (아시아뉴스통신)
+- **SK스퀘어(402340)**: [삼전닉스 핵심 사장보다 더 ‘주식 부자’인 깜짝 2인은? - 조선일보](https://news.google.com/rss/articles/CBMijwFBVV95cUxOTTJVamNMSUFublpYcXF4SU9vZ3dxTUY5TUxxMDhvMzdxLVJDenFZWTBYRWpGNXA3dEpuUW1XbWVjUUlTVkYzNGJ6LUVCSUxITVVNdlF6TzJDQjBDVUhWZG1RUmFqUFFuSFJzMHZzenBCUUd3M25Fd29UVlNLTFQ0Z3dsMkJhR21NT20zZkJlWQ?oc=5) (조선일보)
+- **달바글로벌(483650)**: [[오늘의 IR] 현대자동차ㆍ달바글로벌ㆍ갤럭시아머니트리 등 - 이투데이](https://news.google.com/rss/articles/CBMiVEFVX3lxTE04YXVwbFBJNkpEV01LSTdocVZTX3cxbzhjNGs2R2ozWWt5VHJCNWlRYUxkUG1xYlViT21OcW9fT2JTSlgzX21qT2Z1UUpON3BpT0NzOA?oc=5) (이투데이)
+- **HD현대마린엔진(071970)**: [HD현대마린엔진, 중국 조선소에 선박엔진 공급…227억원 규모 - 해사신문](https://news.google.com/rss/articles/CBMia0FVX3lxTE5IUE82YndBdHVOaXpkOUJMakZUNWFaUkNObnRIUFdQalc0QjRLWVZwelhnSmV3dlE2b2h6UEI0eklTazB0cUE2WXhSTVZZd2hkWHpZM2hGVjlDeWoySU0xb01oQnlqOUoxWlE0?oc=5) (해사신문)
+- **SB성보(003080)**: [[실적속보]SB성보, 올해 2Q 매출액 129억(+18%) 영업이익 -36.6억(적자지속) (연결) - 씽크풀 AI](https://news.google.com/rss/articles/CBMiaEFVX3lxTE5CRElrdTB2cDlUb09QbTEwbVg3bkJ0T1FHYnJnU0Y5ZGpMUXd5MUhVYnRqbldlVDVVUG9qV3lmZUJFbVJTNVNsQ0ZNZ2hhb2NfdWVOYWhiU3hrRnpYY28yZ1NqQXNsVkFD?oc=5) (씽크풀 AI)
 - **평화홀딩스(010770)**: [평화홀딩스, 평화산업 주식 5일 연속 장내 매수... 지분율 63% 돌파 - 데이터투자](https://news.google.com/rss/articles/CBMic0FVX3lxTE9WelN0SmR4YjVTZXJmWnVsT3R5UzB1S0NoRHlvM1RUNU9TYXYySjV6R0xfQjB0TXlHZXA1SUUzcHNHb2lOV3hqOG4zUFFneS1CT0pEaUZ3dlM2bGx6akhnMVFyZXE2RWJ2c2tvU1hwTTZYS3M?oc=5) (데이터투자)
-- **SK스퀘어(402340)**: [SK스퀘어(402340) - 매일경제 마켓](https://news.google.com/rss/articles/CBMilwFBVV95cUxONzlQTWV2cnVJNjczNHBqMW5lZUVBNUkwNmFMUEl4YzhCZmhqUkE3Ujg0cUxWb0NnUm82YlZlbmswdHQ1dWxRYzlDMTRyUUtmWWNjUWdsdXpjZkJRNTVLOEVEd0FlRmZvR0dXMDNiQXlSNEpTWm1NeXFQWFdJWVY0ZjFFWGlHaVRNcUZaWG9LZ2FrNWt1S0ln?oc=5) (매일경제 마켓)
-- **한화오션(042660)**: [세종대왕함 창정비 한화오션에 맡긴다…이지스함 첫 민간 MRO - edaily.co.kr](https://news.google.com/rss/articles/CBMigAFBVV95cUxQNnZ2dGc0ZGpQc1U0MUpnaWZ2eGNXOE1GSUtxa3VuMjZiRXkxWXAxd2dIdUdnY0ZEZ1RueXc2dHRtdGtTQkxhc1MyTURoMHhCV0VWOGM0WUJLcXFuZnpzN2JCR1FuaERGNUJJdjNDclA3MUlWYmFBeU8xSkZUeFh4VA?oc=5) (edaily.co.kr)
-- **금호타이어(073240)**: [타이어 3사 대표, 경영능력…정일택 금호, 이상훈·안종선 한타, 김현석 넥센 순 - 코리아리포트](https://news.google.com/rss/articles/CBMicEFVX3lxTE4tUWs4clAtdlRtMkZtNUtsYjFnS0l4QWRyNWdTdmw1aWEtYmNqWVNxNjZ0dy1iUElwUkM3Z1BnelRIdTJlOUFwQ3R3VU8tbmdGbW9LTEF1QnpPbHdYUWlCNGVFNmhoR0hucmNMRWRkSWM?oc=5) (코리아리포트)
+- **금호타이어(073240)**: [타이어 3사 경영능력…정일택 금호, 이상훈·안종선 한타, 김현석 넥센 순 - 코리아리포트](https://news.google.com/rss/articles/CBMicEFVX3lxTE4tUWs4clAtdlRtMkZtNUtsYjFnS0l4QWRyNWdTdmw1aWEtYmNqWVNxNjZ0dy1iUElwUkM3Z1BnelRIdTJlOUFwQ3R3VU8tbmdGbW9LTEF1QnpPbHdYUWlCNGVFNmhoR0hucmNMRWRkSWM?oc=5) (코리아리포트)
+- **한화오션(042660)**: [이지스 구축함 첫 민간 창정비…세종대왕함, 한화오션에 맡긴다 - v.daum.net](https://news.google.com/rss/articles/CBMiT0FVX3lxTE91cHV4Z2haRUdjN0xkay0wUnVzWFpmTW9MbHRyZ1RiVE9yRW9meUdFZGpwaGlFNEZTZlVWY0RJZlduTlpCQjAzNGlZUnpXMWc?oc=5) (v.daum.net)
 
 ---
 

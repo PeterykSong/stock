@@ -25,6 +25,8 @@ load_dotenv()
 from pykrx import stock
 import yfinance as yf
 
+from indicators import calc_rsi
+
 
 # ── 종목 정의 ────────────────────────────────────────────────
 KR_TICKERS = {
@@ -59,17 +61,20 @@ def latest_business_day():
 def get_kr_prices():
     rows = []
     day = latest_business_day()
+    start = (datetime.strptime(day, "%Y%m%d") - timedelta(days=90)).strftime("%Y%m%d")
     for name, code in KR_TICKERS.items():
         try:
             df = stock.get_market_ohlcv(day, day, code)
             close = int(df["종가"].iloc[-1]) if not df.empty else None
             chg = round(float(df["등락률"].iloc[-1]),2) if not df.empty else None
+            hist = stock.get_market_ohlcv(start, day, code)
+            rsi = calc_rsi(hist["종가"]) if not hist.empty else None
         except Exception as e:
-            close, chg = None, None
+            close, chg, rsi = None, None, None
             print(f"[KR] {name}({code}) 조회 실패: {e}")
         rows.append({
             "종목": name, "티커": code, "시장": "KRX",
-            "종가": close, "등락률(%)": chg, "통화": "KRW", "기준일": day,
+            "종가": close, "등락률(%)": chg, "RSI(14)": rsi, "통화": "KRW", "기준일": day,
         })
     return rows
 
@@ -79,26 +84,27 @@ def get_us_prices():
     for sym in US_TICKERS:
         try:
             t = yf.Ticker(sym)
-            hist = t.history(period="5d")
+            hist = t.history(period="3mo").dropna(subset=["Close"])
             if hist.empty:
                 raise ValueError("no data")
             close = round(float(hist["Close"].iloc[-1]), 2)
             prev = float(hist["Close"].iloc[-2]) if len(hist) > 1 else close
             chg = round((close - prev) / prev * 100, 2) if prev else None
             day = hist.index[-1].strftime("%Y%m%d")
+            rsi = calc_rsi(hist["Close"])
         except Exception as e:
-            close, chg, day = None, None, None
+            close, chg, day, rsi = None, None, None, None
             print(f"[US] {sym} 조회 실패: {e}")
         rows.append({
             "종목": sym, "티커": sym, "시장": "US",
-            "종가": close, "등락률(%)": chg, "통화": "USD", "기준일": day,
+            "종가": close, "등락률(%)": chg, "RSI(14)": rsi, "통화": "USD", "기준일": day,
         })
     return rows
 
 
 def main():
     data = get_kr_prices() + get_us_prices()
-    df = pd.DataFrame(data, columns=["종목", "티커", "시장", "종가", "등락률(%)", "통화", "기준일"])
+    df = pd.DataFrame(data, columns=["종목", "티커", "시장", "종가", "등락률(%)", "RSI(14)", "통화", "기준일"])
 
     pd.set_option("display.unicode.east_asian_width", True)
     print("\n=== 주가 조회 결과 ===")
@@ -109,12 +115,13 @@ def main():
     now = datetime.now(KST).strftime("%Y-%m-%d %H:%M KST")
     with open("stock_prices_result.md", "w", encoding="utf-8") as f:
         f.write(f"# 주가 브리핑 ({now})\n\n")
-        f.write("| 종목 | 티커 | 종가 | 등락률(%) | 통화 | 기준일 |\n")
-        f.write("|---|---|---:|---:|---|---|\n")
+        f.write("| 종목 | 티커 | 종가 | 등락률(%) | RSI(14) | 통화 | 기준일 |\n")
+        f.write("|---|---|---:|---:|---:|---|---|\n")
         for r in data:
             price = f"{r['종가']:,}" if r["종가"] is not None else "N/A"
             chg = r["등락률(%)"] if r["등락률(%)"] is not None else "N/A"
-            f.write(f"| {r['종목']} | {r['티커']} | {price} | {chg} | {r['통화']} | {r['기준일']} |\n")
+            rsi = r["RSI(14)"] if r["RSI(14)"] is not None else "N/A"
+            f.write(f"| {r['종목']} | {r['티커']} | {price} | {chg} | {rsi} | {r['통화']} | {r['기준일']} |\n")
 
     print("\n저장 완료: stock_prices_result.csv, stock_prices_result.md")
 

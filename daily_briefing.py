@@ -129,14 +129,14 @@ def get_watchlist(md_text: str) -> list:
 
 
 def parse_stock_table(md_text: str) -> list:
-    """stock_prices_result.md 전체 행 파싱 → [{name, ticker, price, change, currency, date}]"""
+    """stock_prices_result.md 전체 행 파싱 → [{name, ticker, price, change, rsi, currency, date}]"""
     rows = []
     for line in md_text.splitlines():
         s = line.strip()
         if not s.startswith("|"):
             continue
         cells = [c.strip() for c in s.strip("|").split("|")]
-        if len(cells) < 6:
+        if len(cells) < 7:
             continue
         name = cells[0]
         if name in ("종목", "") or set(name) <= set("-: "):
@@ -146,8 +146,9 @@ def parse_stock_table(md_text: str) -> list:
             "ticker": cells[1],
             "price": cells[2],
             "change": cells[3],
-            "currency": cells[4],
-            "date": cells[5],
+            "rsi": cells[4],
+            "currency": cells[5],
+            "date": cells[6],
         })
     return rows
 
@@ -156,37 +157,71 @@ def format_stock_table(rows: list) -> str:
     """주가 데이터를 마크다운 테이블로 포맷"""
     if not rows:
         return "_(주가 데이터 없음)_"
-    lines = ["| 종목 | 티커 | 종가 | 등락률 | 통화 |",
-             "|---|---|---:|---:|---|"]
+    lines = ["| 종목 | 티커 | 종가 | 등락률 | RSI(14) | 통화 |",
+             "|---|---|---:|---:|---:|---|"]
     for r in rows:
         try:
             chg = float(r["change"])
             chg_str = f"{chg:+.2f}%" if chg != 0 else "0.00%"
         except ValueError:
             chg_str = r["change"]
-        lines.append(f"| {r['name']} | {r['ticker']} | {r['price']} | {chg_str} | {r['currency']} |")
+        lines.append(f"| {r['name']} | {r['ticker']} | {r['price']} | {chg_str} | {r['rsi']} | {r['currency']} |")
     return "\n".join(lines)
 
 
-def get_top_screener_stocks(csv_path: str, top_n: int = 10) -> list:
-    """kospi_screener.csv 상위 top_n 종목의 (Name, Symbol) 목록을 반환"""
+def get_top_screener_rows(csv_path: str, top_n: int = 10) -> list:
+    """kospi_screener.csv 상위 top_n 종목 행을 반환
+    [{name, symbol, price, rsi, pbr, roe, score}, ...]"""
     if not os.path.exists(csv_path):
         return []
-    pairs = []
+    rows = []
     with open(csv_path, encoding="utf-8-sig", newline="") as f:
         for row in csv.DictReader(f):
             name, symbol = row.get("Name"), row.get("Symbol")
-            if name and symbol:
-                pairs.append((name, symbol))
-            if len(pairs) >= top_n:
+            if not (name and symbol):
+                continue
+            rows.append({
+                "name": name,
+                "symbol": symbol,
+                "price": row.get("Price"),
+                "rsi": row.get("RSI"),
+                "pbr": row.get("PBR"),
+                "roe": row.get("ROE"),
+                "score": row.get("Score"),
+            })
+            if len(rows) >= top_n:
                 break
-    return pairs
+    return rows
+
+
+def _fmt_num(val, digits=2, suffix=""):
+    try:
+        return f"{float(val):,.{digits}f}{suffix}"
+    except (TypeError, ValueError):
+        return "N/A"
+
+
+def format_screener_table(rows: list) -> str:
+    """스크리너 상위 종목을 관심 종목 주가 표와 같은 형식의 마크다운 테이블로 포맷"""
+    if not rows:
+        return "_(스크리너 결과가 없습니다)_"
+    lines = ["| 종목 | 티커 | 종가 | RSI(14) | PBR | ROE | Score |",
+             "|---|---|---:|---:|---:|---:|---:|"]
+    for r in rows:
+        price = _fmt_num(r["price"], 0)
+        rsi = _fmt_num(r["rsi"])
+        pbr = _fmt_num(r["pbr"])
+        roe = _fmt_num(r["roe"], 2, "%")
+        score = _fmt_num(r["score"], 3)
+        lines.append(f"| {r['name']} | {r['symbol']} | {price} | {rsi} | {pbr} | {roe} | {score} |")
+    return "\n".join(lines)
 
 
 def collect_screener_news(stocks: list) -> list:
     """스크리너 상위 종목별로 뉴스 1건씩 검색"""
     items = []
-    for name, symbol in stocks:
+    for row in stocks:
+        name, symbol = row["name"], row["symbol"]
         url = SEARCH_RSS.format(q=urllib.parse.quote(name))
         try:
             articles = parse_rss(fetch(url), limit=1)
@@ -319,10 +354,11 @@ def main():
         summary = summarize(client, label, sections[label], count=10)
         parts.append(f"## {icons.get(label,'')} {label}\n\n{summary}\n")
 
-    # 4) 스크리너 상위 종목 뉴스
-    top_screener_stocks = get_top_screener_stocks(SCREENER_CSV, top_n=10)
-    print(f"[info] 스크리너 상위 종목 {len(top_screener_stocks)}개 뉴스 검색 중")
-    screener_news = collect_screener_news(top_screener_stocks)
+    # 4) 스크리너 상위 종목 (표 + 뉴스)
+    top_screener_rows = get_top_screener_rows(SCREENER_CSV, top_n=10)
+    print(f"[info] 스크리너 상위 종목 {len(top_screener_rows)}개 뉴스 검색 중")
+    screener_table_md = format_screener_table(top_screener_rows)
+    screener_news = collect_screener_news(top_screener_rows)
     screener_news_md = format_screener_news(screener_news)
 
     # 5) 마크다운 작성
@@ -331,7 +367,7 @@ def main():
         f"# 📰 데일리 브리핑 ({now:%Y-%m-%d} KST)\n\n"
         f"> 생성 시각: {now:%Y-%m-%d %H:%M} KST / 뉴스 소스: Google 뉴스\n\n"
         f"## 📊 관심 종목 주가\n\n{stock_table}\n\n---\n\n"
-        f"## 🏆 KOSPI 스크리너 상위 종목 뉴스\n\n{screener_news_md}\n\n---\n\n"
+        f"## 🏆 KOSPI 스크리너 상위 종목\n\n{screener_table_md}\n\n{screener_news_md}\n\n---\n\n"
     )
     footer = (
         "\n---\n*본 브리핑은 Google 뉴스 헤드라인을 Claude로 자동 요약한 것으로, "

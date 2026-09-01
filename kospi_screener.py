@@ -50,6 +50,8 @@ except ImportError:
     )
     sys.exit(1)
 
+from indicators import calc_rsi
+
 
 def guess_default_start(days_back: int = 180) -> str:
     return (dt.date.today() - dt.timedelta(days=days_back)).strftime("%Y-%m-%d")
@@ -264,6 +266,7 @@ def screen_kospi(
                 if price_over_ma5 is not None and ma5_over_ma20 is not None
                 else None
             )
+            rsi = calc_rsi(price_df["Close"])
 
             fundamental = fundamentals_map.loc[symbol] if symbol in fundamentals_map.index else None
             rows.append(
@@ -277,6 +280,7 @@ def screen_kospi(
                     "MA20": ma20,
                     "Price/MA20": price_now / ma20 if ma20 != 0 else None,
                     "Price/MA5": price_over_ma5,
+                    "RSI": rsi,
                     "Momentum": momentum,
                     "PBR": fundamental["PBR"] if fundamental is not None else None,
                     "ROE": fundamental["ROE"] if fundamental is not None else None,
@@ -293,7 +297,7 @@ def screen_kospi(
             continue
 
     columns = [
-        "Symbol", "Name", "Date", "Price", "Close", "MA5", "MA20", "Price/MA20", "Price/MA5",
+        "Symbol", "Name", "Date", "Price", "Close", "MA5", "MA20", "Price/MA20", "Price/MA5", "RSI",
         "PBR", "ROE", "PER", "EPS", "BPS", "DIV", "DPS", "Momentum", "Score",
     ]
     if not rows:
