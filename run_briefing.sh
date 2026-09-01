@@ -22,7 +22,9 @@ log() {
 log "===== 시작 ====="
 
 log "[0/4] git pull --rebase 중..."
-git pull --rebase >> "$LOG" 2>&1
+# --autostash: 커밋되지 않은 로컬 변경사항(예: 세션 중 편집 후 미커밋)이 있어도
+# 자동으로 스태시했다가 rebase 후 복원하여 "unstaged changes" 실패를 방지한다.
+git pull --rebase --autostash >> "$LOG" 2>&1
 log "[0/4] git pull --rebase 완료"
 
 log "[1/4] kospi_screener.py 실행 중..."
@@ -51,7 +53,7 @@ if [ "$PUSH_TO_GIT" = "true" ]; then
       break
     fi
     echo "[warn] git push 실패 (시도 $attempt/3) — pull --rebase 후 재시도" >> "$LOG"
-    git pull --rebase >> "$LOG" 2>&1 || break
+    git pull --rebase --autostash >> "$LOG" 2>&1 || break
   done
   if [ "$push_ok" = "false" ]; then
     echo "[warn] git push 최종 실패" >> "$LOG"
